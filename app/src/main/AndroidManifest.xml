@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="com.introtoandroid.agameofgames">
+=======
+    package="com.example.android.agameofgames">
+>>>>>>> e1a8edf2dc1cb4d1a71f63e9e62a4a80283b31a8
 
     <application
         android:allowBackup="true"
