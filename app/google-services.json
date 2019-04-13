@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "487014463484",
+    "firebase_url": "https://agameofgames-41afc.firebaseio.com",
+    "project_id": "agameofgames-41afc",
+    "storage_bucket": "agameofgames-41afc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487014463484:android:7bb56bbcdc1e2501",
+        "android_client_info": {
+          "package_name": "com.example.android.agameofgames"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGsNS4y046OptnNaL6VpsKnjHki4w8eWk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487014463484-u7li3tf4idtjac1ujnihnutar9fpo747.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
