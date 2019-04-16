@@ -46,7 +46,10 @@ public class QuizPage extends AppCompatActivity {
         DocumentReference docRef = db.collection("quizzes")
                 .document(id).collection("questions")
                 .document("question1");
-        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+
+        DocumentReference docRef2 =db.document("quizzes/" + id + "/questions/question1");
+
+        docRef2.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 Quiz quiz = documentSnapshot.toObject(Quiz.class);
