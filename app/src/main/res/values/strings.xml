@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AGameofGames</string>
+
+    <string name="resultString">[your results]</string>
+    <string name="explanation">[input flavor text here aaaaaaaaaaaaaaaaaaaaaaaaasfdgfjhgkjhkhjdhshdjhfkjglkgjfhdshgdjhfkjgfdsdjhfkjgfhcvbguyftdhgcjvbhguofyidtjgchvhkfydtujgchkgukrhfviybuykhm]</string>
+    <string name="homeButtonText">Return To\n Homepage</string>
+    <string name="retakeButtonText">Retake\n Quiz</string>
+    <string name="YouAre">You Are:</string>
+
+</resources>
