@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int RC_SIGN_IN = 1;
 
     public static final String QUIZ_ID = "com.example.android.agameofgames.ID";
+    public static final String QUESTION_NUM = "com.example.android.agameofgames.NUM";
+    public static final String SCORE = "com.example.android.agameofgames.SCORE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), QuizPage.class);
                 i.putExtra(QUIZ_ID, "bread");
+                i.putExtra(QUESTION_NUM, 1);
+                i.putExtra(SCORE, 0);
                 startActivity(i);
             }
         });
