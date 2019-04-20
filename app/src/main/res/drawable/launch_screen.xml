@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:opacity="opaque">
+
+    <!-- Setting the background color to white
+         although it should be updated to the theme color later -->
+    <item android:drawable="@android:color/white"/>
+
+    <!-- Logo! -->
+    <item>
+        <bitmap
+            android:src="@drawable/logo"
+            android:gravity="center" />
+    </item>
+
+</layer-list>
