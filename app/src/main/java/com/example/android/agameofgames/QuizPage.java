@@ -57,7 +57,7 @@ public class QuizPage extends AppCompatActivity {
         docRef2.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
-                documentSnapshot.get("results");
+//                documentSnapshot.get("results");
                 Quiz quiz = documentSnapshot.toObject(Quiz.class);
 
                 question.setText(quiz.getQuestion());
