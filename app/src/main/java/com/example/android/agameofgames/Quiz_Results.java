@@ -27,13 +27,14 @@ public class Quiz_Results extends AppCompatActivity {
 
     private Button goHome;
     private Button retakeQuiz;
-    private String imageID;
     private String resultNum;
 
+    final ImageView image = findViewById(R.id.resultImage);
     final TextView yourResult= findViewById(R.id.quizResult);
     final TextView flavorText= findViewById(R.id.resultText);
 
-    ImageView burntToast;
+    private ImageView resultImage = findViewById(R.id.resultImage);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
