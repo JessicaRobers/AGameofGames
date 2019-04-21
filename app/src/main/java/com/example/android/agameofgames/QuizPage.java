@@ -12,11 +12,12 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 public class QuizPage extends AppCompatActivity {
 
     private Integer selection;
-//    private int questionNum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,27 +38,17 @@ public class QuizPage extends AppCompatActivity {
         final Button op4 = findViewById(R.id.op4);
         Button next = findViewById(R.id.next);
 
-//        op1.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getTheme()));
-//        op2.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getTheme()));
-//        op3.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getTheme()));
-//        op4.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getTheme()));
+        // initializing firebase cloud storage
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+        StorageReference storageRef = storage.getReference();
 
         // initializing Cloud Firestore
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-
-//        Quiz quiz = new Quiz("Pick a color:", "red", "yellow", "blue", "green");
-//        db.collection("quizzes").document("color").set(quiz);
-
-//        DocumentReference docRef = db.collection("quizzes")
-//                .document(id).collection("questions")
-//                .document("question1");
-
         DocumentReference docRef2 = db.document("quizzes/" + id + "/questions/question" + questionNum);
 
         docRef2.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
-//                documentSnapshot.get("results");
                 Quiz quiz = documentSnapshot.toObject(Quiz.class);
 
                 question.setText(quiz.getQuestion());
@@ -72,14 +63,6 @@ public class QuizPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 selection = 1;
-//                op1.setSelected(true);
-//                op1.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark, getTheme()));
-////                op2.setSelected(false);
-//                op2.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getTheme()));
-////                op3.setSelected(false);
-//                op3.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getTheme()));
-////                op4.setSelected(false);
-//                op4.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getTheme()));
             }
         });
 
@@ -87,14 +70,6 @@ public class QuizPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 selection = 2;
-//                op1.setSelected(false);
-//                op2.setSelected(true);
-//                op3.setSelected(false);
-//                op4.setSelected(false);
-//                op1.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getTheme()));
-//                op2.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark, getTheme()));
-//                op3.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getTheme()));
-//                op4.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getTheme()));
             }
         });
 
@@ -102,14 +77,6 @@ public class QuizPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 selection = 3;
-//                op1.setSelected(false);
-//                op2.setSelected(false);
-//                op3.setSelected(true);
-//                op4.setSelected(false);
-//                op1.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getTheme()));
-//                op2.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getTheme()));
-//                op3.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark, getTheme()));
-//                op4.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getTheme()));
             }
         });
 
@@ -117,14 +84,6 @@ public class QuizPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 selection = 4;
-//                op1.setSelected(false);
-//                op2.setSelected(false);
-//                op3.setSelected(false);
-//                op4.setSelected(true);
-//                op1.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getTheme()));
-//                op2.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getTheme()));
-//                op3.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getTheme()));
-//                op4.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark, getTheme()));
             }
         });
 
@@ -137,12 +96,17 @@ public class QuizPage extends AppCompatActivity {
                         // we know we're on the last question
                         // so we launch the activity for the results page
                         Toast.makeText(getApplicationContext(), "*launching results* score: " + (score + selection), Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(getApplicationContext(), Quiz_Results.class);
+                        i.putExtra(MainActivity.QUIZ_ID, id);
+                        i.putExtra(MainActivity.SCORE, (score + selection));
+                        startActivity(i);
+                        finish();
                     } else {
                         // we're on any other question, so we launch the quiz page again
                         Intent i = new Intent(getApplicationContext(), QuizPage.class);
                         i.putExtra(MainActivity.QUIZ_ID, id);
                         i.putExtra(MainActivity.QUESTION_NUM, questionNum + 1);
-                        i.putExtra(MainActivity.SCORE, score + selection);
+                        i.putExtra(MainActivity.SCORE, (score + selection));
                         startActivity(i);
                         finish();
                     }
