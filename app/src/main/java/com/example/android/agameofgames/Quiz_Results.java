@@ -75,7 +75,12 @@ public class Quiz_Results extends AppCompatActivity {
         retakeQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //GO TO BEGINNING OF SAME QUIZ
+                Intent i = new Intent(getApplicationContext(), QuizPage.class);
+                i.putExtra(MainActivity.QUIZ_ID, quizID);
+                i.putExtra(MainActivity.QUESTION_NUM, 1);
+                i.putExtra(MainActivity.SCORE, 0);
+
+                startActivity(i);
             }
         });
 
@@ -83,7 +88,9 @@ public class Quiz_Results extends AppCompatActivity {
         goHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //RETURN TO HOMEPAGE
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+
+                startActivity(i);
             }
 
         });
