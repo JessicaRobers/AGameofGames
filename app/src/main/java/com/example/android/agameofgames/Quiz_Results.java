@@ -32,7 +32,6 @@ public class Quiz_Results extends AppCompatActivity {
 
     private Button goHome;
     private Button retakeQuiz;
-    private String imageID;
     private String resultNum;
 
     private String quizID;
@@ -45,6 +44,13 @@ public class Quiz_Results extends AppCompatActivity {
 
         final TextView yourResult= findViewById(R.id.quizResult);
         final TextView flavorText = findViewById(R.id.resultText);
+
+
+//        final ImageView image = findViewById(R.id.resultImage);
+//        final TextView yourResult= findViewById(R.id.quizResult);
+//        final TextView flavorText= findViewById(R.id.resultText);
+//
+//        private ImageView resultImage = findViewById(R.id.resultImage);
 
         Intent intent = getIntent();
         quizID = intent.getStringExtra(MainActivity.QUIZ_ID);
