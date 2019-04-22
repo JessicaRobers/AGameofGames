@@ -3,7 +3,16 @@
     <color name="colorPrimary">#ff3d00</color>
     <color name="colorPrimaryDark">#c30000</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="colorButtonNormal">#3d5afe</color>
+    <!--<color name="colorButtonNormal">#3d5afe</color>-->
+
+    <color name="primaryColor">#ef5350</color>
+    <color name="primaryLightColor">#ff867c</color>
+    <color name="primaryDarkColor">#b61827</color>
+    <color name="secondaryColor">#3d5afe</color>
+    <color name="secondaryLightColor">#8187ff</color>
+    <color name="secondaryDarkColor">#0031ca</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#ffffff</color>
 
 >>>>>>> 0433ef55e9ccf60e0e12c0b3f8537d7841c85ea0
 </resources>

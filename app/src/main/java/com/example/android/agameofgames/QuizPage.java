@@ -1,6 +1,8 @@
 package com.example.android.agameofgames;
 
 import android.content.Intent;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -63,6 +65,10 @@ public class QuizPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 selection = 1;
+                ViewCompat.setBackgroundTintList(op1, ContextCompat.getColorStateList(getApplicationContext(), R.color.secondaryDarkColor));
+                ViewCompat.setBackgroundTintList(op2, ContextCompat.getColorStateList(getApplicationContext(), R.color.secondaryLightColor));
+                ViewCompat.setBackgroundTintList(op3, ContextCompat.getColorStateList(getApplicationContext(), R.color.secondaryLightColor));
+                ViewCompat.setBackgroundTintList(op4, ContextCompat.getColorStateList(getApplicationContext(), R.color.secondaryLightColor));
             }
         });
 
@@ -70,6 +76,10 @@ public class QuizPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 selection = 2;
+                ViewCompat.setBackgroundTintList(op1, ContextCompat.getColorStateList(getApplicationContext(), R.color.secondaryLightColor));
+                ViewCompat.setBackgroundTintList(op2, ContextCompat.getColorStateList(getApplicationContext(), R.color.secondaryDarkColor));
+                ViewCompat.setBackgroundTintList(op3, ContextCompat.getColorStateList(getApplicationContext(), R.color.secondaryLightColor));
+                ViewCompat.setBackgroundTintList(op4, ContextCompat.getColorStateList(getApplicationContext(), R.color.secondaryLightColor));
             }
         });
 
@@ -77,6 +87,10 @@ public class QuizPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 selection = 3;
+                ViewCompat.setBackgroundTintList(op1, ContextCompat.getColorStateList(getApplicationContext(), R.color.secondaryLightColor));
+                ViewCompat.setBackgroundTintList(op2, ContextCompat.getColorStateList(getApplicationContext(), R.color.secondaryLightColor));
+                ViewCompat.setBackgroundTintList(op3, ContextCompat.getColorStateList(getApplicationContext(), R.color.secondaryDarkColor));
+                ViewCompat.setBackgroundTintList(op4, ContextCompat.getColorStateList(getApplicationContext(), R.color.secondaryLightColor));
             }
         });
 
@@ -84,6 +98,10 @@ public class QuizPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 selection = 4;
+                ViewCompat.setBackgroundTintList(op1, ContextCompat.getColorStateList(getApplicationContext(), R.color.secondaryLightColor));
+                ViewCompat.setBackgroundTintList(op2, ContextCompat.getColorStateList(getApplicationContext(), R.color.secondaryLightColor));
+                ViewCompat.setBackgroundTintList(op3, ContextCompat.getColorStateList(getApplicationContext(), R.color.secondaryLightColor));
+                ViewCompat.setBackgroundTintList(op4, ContextCompat.getColorStateList(getApplicationContext(), R.color.secondaryDarkColor));
             }
         });
 
