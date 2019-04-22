@@ -40,14 +40,13 @@ public class MainActivity extends AppCompatActivity {
         mermaid = findViewById(R.id.whatkindofmermaid);
         temper = findViewById(R.id.temper);
 =======
-        breadType = findViewById(R.id.typeofbread);
 
 
 >>>>>>> c37b2f4efa3f7a49a620e484f18da7c6eb2055df
 //        String id = "bread";
 
-        Button button = findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+       // Button button = findViewById(R.id.button);
+        breadType.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), QuizPage.class);
@@ -58,6 +57,49 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        temper.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), QuizPage.class);
+                i.putExtra(QUIZ_ID, "temper");
+                i.putExtra(QUESTION_NUM, 1);
+                i.putExtra(SCORE, 0);
+                startActivity(i);
+            }
+        });
+
+        princess.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), QuizPage.class);
+                i.putExtra(QUIZ_ID, "dominoes");
+                i.putExtra(QUESTION_NUM, 1);
+                i.putExtra(SCORE, 0);
+                startActivity(i);
+            }
+        });
+
+        yourewearing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), QuizPage.class);
+                i.putExtra(QUIZ_ID, "somethingsomethingsomething");
+                i.putExtra(QUESTION_NUM, 1);
+                i.putExtra(SCORE, 0);
+                startActivity(i);
+            }
+        });
+
+        mermaid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), QuizPage.class);
+                i.putExtra(QUIZ_ID, "somethingsomethingsomethingsomething");
+                i.putExtra(QUESTION_NUM, 1);
+                i.putExtra(SCORE, 0);
+                startActivity(i);
+            }
+        });
 //        // choosing authentication providers
 //        List<AuthUI.IdpConfig> providers = Arrays.asList(
 //                new AuthUI.IdpConfig.EmailBuilder().build(),
