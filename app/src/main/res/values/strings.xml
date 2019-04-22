@@ -8,14 +8,15 @@
     <string name="retakeButtonText">Retake\n Quiz</string>
     <string name="YouAre">You Are:</string>
     <string name="welcometo">Welcome To</string>
-    <string name="gameofgames">A Game of Games</string>
+    <string name="gameofgames">A GAME OF GAMES</string>
     <string name="chooseyourfate">CHOOSE YOUR FATE!</string>
     <string name="typeofbread">What Type of Bread Are You?</string>
     <string name="canweguessyour">Can We Guess Your Bday?</string>
     <string name="disney">Which Disney Princess Are You?</string>
     <string name="haveyoualready">Have You Already Met Your Soulmate?</string>
-    <string name="whatkindof">What Kind of Mermaid/Merman Are You?</string>
-    <string name="canweguesswhat">Can We Guess What You\'re Wearing?</string>
+    <string name="whatkindof">What Kind of Mermaid\norMerman Are You?</string>
+    <string name="whattemperamnet">Which Temperament\n Are You?</string>
+    <string name="canweguesswhat">Can We Guess What \nYou\'re Wearing?</string>
     <string name="next">Next</string>
 
 </resources>

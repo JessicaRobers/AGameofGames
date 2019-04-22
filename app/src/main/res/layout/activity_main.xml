@@ -33,13 +33,18 @@
         android:id="@+id/welcometo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:fontFamily="casual"
         android:text="@string/welcometo"
+        android:gravity="center"
         android:textColor="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.449"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.154" />
 
@@ -47,15 +52,23 @@
         android:id="@+id/gameofgames"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:fontFamily="monospace"
         android:text="@string/gameofgames"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.207" />
+        app:layout_constraintVertical_bias="0.207"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        />
 
     <TextView
         android:id="@+id/chooseyourfate"
@@ -63,14 +76,15 @@
         android:layout_height="19dp"
         android:layout_marginBottom="24dp"
         android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
         android:text="@string/chooseyourfate"
         android:textColor="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.272" />
+        app:layout_constraintVertical_bias="0.271" />
     <View
         android:id="@+id/rectangle_at_the_top"
         android:layout_width="match_parent"
@@ -90,11 +104,17 @@
         android:id="@+id/canweguess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
         android:text="@string/canweguessyour"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintLeft_toLeftOf="@id/typeofbread"
         app:layout_constraintRight_toRightOf="@id/typeofbread"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/chooseyourfate" />
 
     <!--Button 2-->
@@ -103,11 +123,17 @@
         android:id="@+id/typeofbread"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
         android:text="@string/typeofbread"
-        app:layout_constraintHorizontal_bias="0.563"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="@id/gameofgames"
         app:layout_constraintRight_toRightOf="@id/gameofgames"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/canweguess" />
 
     <!--Button 3-->
@@ -116,12 +142,18 @@
     <Button
         android:id="@+id/temper"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginTop="52dp"
-        android:text="Which temper are you?"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="@string/whattemperamnet"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintLeft_toLeftOf="@id/gameofgames"
         app:layout_constraintRight_toRightOf="@id/gameofgames"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/typeofbread" />
 
     <!--Button 4-->
@@ -130,11 +162,17 @@
         android:id="@+id/dominos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
         android:text="What Domino's extra are you?"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintLeft_toLeftOf="@id/gameofgames"
         app:layout_constraintRight_toRightOf="@id/gameofgames"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/temper" />
 
     <!--Button 5-->
