@@ -100,7 +100,7 @@
     <!--Button 2-->
 
     <Button
-        android:id="@+id/typeofred"
+        android:id="@+id/typeofbred"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
@@ -128,6 +128,19 @@
 
     <Button
         android:id="@+id/whatkindofmermaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="What Kind of Mermaid/Merman Would You Be?"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintLeft_toLeftOf="@id/gameofgames"
+        app:layout_constraintRight_toRightOf="@id/gameofgames"
+        app:layout_constraintTop_toBottomOf="@id/disneyprincess" />
+
+    <!--Button 5-->
+
+    <Button
+        android:id="@+id/temperment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"

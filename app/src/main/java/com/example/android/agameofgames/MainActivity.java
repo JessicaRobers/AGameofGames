@@ -22,11 +22,19 @@ public class MainActivity extends AppCompatActivity {
     public static final String QUESTION_NUM = "com.example.android.agameofgames.NUM";
     public static final String SCORE = "com.example.android.agameofgames.SCORE";
 
+    Button breadType;
+    Button princess;
+    Button soulmate;
+    Button mermaid;
+    Button yourewearing;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        breadType = findViewById(R.id.typeofred);
+
 
 //        String id = "bread";
 
