@@ -1,5 +1,6 @@
 package com.example.android.agameofgames;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -105,6 +106,8 @@ public class Quiz_Results extends AppCompatActivity {
         retakeQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                retakeQuiz.setBackgroundColor(Color.parseColor("#ff867c"));
+
                 Intent i = new Intent(getApplicationContext(), QuizPage.class);
                 i.putExtra(MainActivity.QUIZ_ID, quizID);
                 i.putExtra(MainActivity.QUESTION_NUM, 1);
@@ -118,6 +121,7 @@ public class Quiz_Results extends AppCompatActivity {
         goHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                goHome.setBackgroundColor(Color.parseColor("#ff867c"));
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
 
                 startActivity(i);
