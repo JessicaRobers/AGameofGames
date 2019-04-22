@@ -68,7 +68,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textColor="@color/secondaryTextColor"
-        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/primaryColor"
         />
 
 </android.support.constraint.ConstraintLayout>
