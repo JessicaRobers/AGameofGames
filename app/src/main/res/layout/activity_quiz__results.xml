@@ -74,34 +74,30 @@
         app:layout_constraintTop_toBottomOf="@+id/quizResult" />
 
 
-
     <Button
         android:id="@+id/homeButton"
         android:layout_width="100dp"
         android:layout_height="48dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginBottom="0dp"
-        android:text="@string/homeButtonText"
-        app:layout_constraintBottom_toBottomOf="@id/retakeButton"
-        app:layout_constraintEnd_toEndOf="@id/imageFrame"
-        android:textColor="@android:color/white"
+        android:layout_marginEnd="10dp"
         android:background="#b61827"
+        android:text="@string/homeButtonText"
+        android:textColor="@android:color/white"
         android:textStyle="bold"
-        />
+        app:layout_constraintBottom_toBottomOf="@id/retakeButton"
+        app:layout_constraintEnd_toEndOf="@id/imageFrame" />
 
     <Button
         android:id="@+id/retakeButton"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="24dp"
         android:layout_weight="1"
-        android:text="Retake \n Quiz"
-        app:layout_constraintStart_toStartOf="@+id/imageFrame"
-        app:layout_constraintTop_toBottomOf="@+id/resultText"
         android:background="#ef5350"
+        android:text="Retake \n Quiz"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        />
+        app:layout_constraintStart_toStartOf="@+id/imageFrame"
+        app:layout_constraintTop_toBottomOf="@+id/resultText" />
 
 </android.support.constraint.ConstraintLayout>

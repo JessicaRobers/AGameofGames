@@ -59,7 +59,7 @@ public class Quiz_Results extends AppCompatActivity {
 
         int imageNum;
 
-        if (resultID <8) {
+        if (resultID <10) {
             resultNum = "result1";
             imageNum = 1;
         }
@@ -67,7 +67,7 @@ public class Quiz_Results extends AppCompatActivity {
             resultNum = "result2";
             imageNum = 2;
         }
-        else if (resultID <16) {
+        else if (resultID <14) {
             resultNum = "result3";
             imageNum = 3;
         }
