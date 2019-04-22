@@ -10,11 +10,7 @@
     <string name="welcometo">Welcome To</string>
     <string name="gameofgames">A Game of Games</string>
     <string name="chooseyourfate">CHOOSE YOUR FATE!</string>
-<<<<<<< HEAD
-    <string name="whattypeofbred">What Type of Red Are You?</string>
-=======
     <string name="typeofbread">What Type of Bread Are You?</string>
->>>>>>> c37b2f4efa3f7a49a620e484f18da7c6eb2055df
     <string name="canweguessyour">Can We Guess Your Bday?</string>
     <string name="disney">Which Disney Princess Are You?</string>
     <string name="haveyoualready">Have You Already Met Your Soulmate?</string>

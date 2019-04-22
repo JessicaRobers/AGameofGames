@@ -11,8 +11,6 @@ import android.widget.Button;
 //import com.google.firebase.auth.FirebaseAuth;
 //import com.google.firebase.auth.FirebaseUser;
 
-import java.util.Arrays;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,34 +22,50 @@ public class MainActivity extends AppCompatActivity {
 
     Button breadType;
     Button princess;
-    Button mermaid;
+    Button dominos;
     Button yourewearing;
-    Button temper
+    Button temper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
-        breadType = findViewById(R.id.typeofbred);
-        princess = findViewById(R.id.disneyprincess);
-        yourewearing = findViewById(R.id.canweguess);
-        mermaid = findViewById(R.id.whatkindofmermaid);
-        temper = findViewById(R.id.temper);
-=======
         breadType = findViewById(R.id.typeofbread);
+        princess = findViewById(R.id.temper);
+        yourewearing = findViewById(R.id.canweguess);
+        dominos = findViewById(R.id.dominos);
+        temper = findViewById(R.id.temper);
+//        breadType = findViewById(R.id.typeofbread);
 
-
->>>>>>> c37b2f4efa3f7a49a620e484f18da7c6eb2055df
-//        String id = "bread";
-
-        Button button = findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+//        Button button = findViewById(R.id.button);
+        breadType.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), QuizPage.class);
                 i.putExtra(QUIZ_ID, "bread");
+                i.putExtra(QUESTION_NUM, 1);
+                i.putExtra(SCORE, 0);
+                startActivity(i);
+            }
+        });
+
+        temper.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), QuizPage.class);
+                i.putExtra(QUIZ_ID, "temper");
+                i.putExtra(QUESTION_NUM, 1);
+                i.putExtra(SCORE, 0);
+                startActivity(i);
+            }
+        });
+
+        dominos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), QuizPage.class);
+                i.putExtra(QUIZ_ID, "dominos");
                 i.putExtra(QUESTION_NUM, 1);
                 i.putExtra(SCORE, 0);
                 startActivity(i);
