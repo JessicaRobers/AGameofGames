@@ -113,7 +113,7 @@ public class QuizPage extends AppCompatActivity {
                     if (questionNum == 5) {
                         // we know we're on the last question
                         // so we launch the activity for the results page
-                        Toast.makeText(getApplicationContext(), "*launching results* score: " + (score + selection), Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(getApplicationContext(), "*launching results* score: " + (score + selection), Toast.LENGTH_SHORT).show();
                         Intent i = new Intent(getApplicationContext(), Quiz_Results.class);
                         i.putExtra(MainActivity.QUIZ_ID, id);
                         i.putExtra(MainActivity.SCORE, (score + selection));

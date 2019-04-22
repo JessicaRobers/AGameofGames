@@ -114,6 +114,7 @@ public class Quiz_Results extends AppCompatActivity {
                 i.putExtra(MainActivity.SCORE, 0);
 
                 startActivity(i);
+                finish();
             }
         });
 
@@ -125,6 +126,7 @@ public class Quiz_Results extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
 
                 startActivity(i);
+                finish();
             }
 
         });
