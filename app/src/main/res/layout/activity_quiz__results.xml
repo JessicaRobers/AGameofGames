@@ -12,25 +12,24 @@
         android:layout_height="166dp"
         android:layout_marginStart="84dp"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="3dp"
-        android:background="#D81B60"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="8dp"
+        android:background="#8187ff"
         android:gravity="center"
         android:textAllCaps="true"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/resultImage"
         android:layout_width="220dp"
         android:layout_height="140dp"
         android:layout_marginTop="13dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintTop_toTopOf="@+id/imageFrame"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="@+id/imageFrame"
         app:layout_constraintStart_toStartOf="@+id/imageFrame"
-        tools:layout_editor_absoluteX="95dp"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toTopOf="@+id/imageFrame" />
 
     <TextView
         android:id="@+id/youAre"
@@ -42,23 +41,23 @@
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/imageFrame"
         app:layout_constraintTop_toBottomOf="@+id/imageFrame"
-        android:textColor="@color/colorAccent"
+        android:textColor="#b61827"
         android:gravity="center"
         />
 
     <TextView
         android:id="@+id/quizResult"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="56dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="44dp"
 
-        android:background="@color/colorAccent"
+        android:background="#ef5350"
         android:gravity="center"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageFrame"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="@+id/imageFrame"
         app:layout_constraintTop_toBottomOf="@+id/imageFrame" />
 
@@ -70,7 +69,7 @@
         android:layout_marginTop="20dp"
 
         android:gravity="center"
-        android:textColor="#D81B60"
+        android:textColor="#b61827"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/imageFrame"
         app:layout_constraintStart_toStartOf="@+id/imageFrame"
@@ -88,7 +87,7 @@
         app:layout_constraintBottom_toBottomOf="@id/retakeButton"
         app:layout_constraintEnd_toEndOf="@id/imageFrame"
         android:textColor="@android:color/white"
-        android:background="#429C7F"
+        android:background="#b61827"
         android:textStyle="bold"
         />
 
@@ -102,7 +101,7 @@
         android:text="Retake \n Quiz"
         app:layout_constraintStart_toStartOf="@+id/imageFrame"
         app:layout_constraintTop_toBottomOf="@+id/resultText"
-        android:background="#02ce8a"
+        android:background="#ef5350"
         android:textColor="@android:color/white"
         android:textStyle="bold"
         />
