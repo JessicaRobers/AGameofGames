@@ -46,7 +46,8 @@ public class QuizPage extends AppCompatActivity {
 
         // initializing Cloud Firestore
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-        DocumentReference docRef2 = db.document("quizzes/" + id + "/questions/question" + questionNum);
+        DocumentReference docRef2 = db.document("quizzes/" + id
+                + "/questions/question" + questionNum);
 
         docRef2.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
@@ -130,6 +131,7 @@ public class QuizPage extends AppCompatActivity {
                     }
 
                 } else {
+                    // they haven't picked an option, so we show a Toast
                     Toast.makeText(getApplicationContext(), "Please pick an option!", Toast.LENGTH_SHORT).show();
                 }
             }
