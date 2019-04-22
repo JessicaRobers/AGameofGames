@@ -19,5 +19,6 @@ gradlew
 gradlew.bat
 settings.gradle
 google-services.json
+gradle-wrapper.properties
 
 >>>>>>> 0433ef55e9ccf60e0e12c0b3f8537d7841c85ea0
