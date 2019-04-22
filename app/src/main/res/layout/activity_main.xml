@@ -93,7 +93,7 @@
         android:layout_marginTop="24dp"
         android:text="@string/canweguessyour"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="@id/typeofred"
+        app:layout_constraintLeft_toLeftOf="@id/typeofbred"
         app:layout_constraintRight_toRightOf="@id/typeofred"
         app:layout_constraintTop_toBottomOf="@id/chooseyourfate" />
 
@@ -104,7 +104,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:text="@string/whattypeofred"
+        android:text="@string/whattypeofbred"
         app:layout_constraintHorizontal_bias="0.563"
         app:layout_constraintLeft_toLeftOf="@id/gameofgames"
         app:layout_constraintRight_toRightOf="@id/gameofgames"
@@ -122,7 +122,7 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintLeft_toLeftOf="@id/gameofgames"
         app:layout_constraintRight_toRightOf="@id/gameofgames"
-        app:layout_constraintTop_toBottomOf="@id/typeofred" />
+        app:layout_constraintTop_toBottomOf="@id/typeofbred" />
 
     <!--Button 4-->
 

@@ -24,18 +24,20 @@ public class MainActivity extends AppCompatActivity {
 
     Button breadType;
     Button princess;
-    Button soulmate;
     Button mermaid;
     Button yourewearing;
+    Button temper
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        breadType = findViewById(R.id.typeofred);
-
-
+        breadType = findViewById(R.id.typeofbred);
+        princess = findViewById(R.id.disneyprincess);
+        yourewearing = findViewById(R.id.canweguess);
+        mermaid = findViewById(R.id.whatkindofmermaid);
+        temper = findViewById(R.id.temper);
 //        String id = "bread";
 
         Button button = findViewById(R.id.button);
