@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        breadType = findViewById(R.id.typeofred);
+        breadType = findViewById(R.id.typeofbread);
 
 
 //        String id = "bread";
