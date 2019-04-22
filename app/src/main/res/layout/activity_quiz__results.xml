@@ -50,33 +50,31 @@
         android:id="@+id/quizResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginEnd="56dp"
         android:layout_marginTop="38dp"
+        android:layout_marginEnd="56dp"
 
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageFrame"
-        app:layout_constraintTop_toBottomOf="@+id/imageFrame"
-        android:textColor="#FFFFFF"
         android:background="@color/colorAccent"
         android:gravity="center"
-        />
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageFrame"
+        app:layout_constraintStart_toStartOf="@+id/imageFrame"
+        app:layout_constraintTop_toBottomOf="@+id/imageFrame" />
 
 
     <TextView
         android:id="@+id/resultText"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
 
-        app:layout_constraintStart_toStartOf="@+id/imageFrame"
-        app:layout_constraintTop_toBottomOf="@+id/quizResult"
+        android:gravity="center"
         android:textColor="#D81B60"
         android:textSize="18sp"
-        android:gravity="center"
-        />
+        app:layout_constraintEnd_toEndOf="@+id/imageFrame"
+        app:layout_constraintStart_toStartOf="@+id/imageFrame"
+        app:layout_constraintTop_toBottomOf="@+id/quizResult" />
 
 
 
