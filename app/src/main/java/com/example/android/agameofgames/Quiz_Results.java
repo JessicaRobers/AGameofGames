@@ -95,7 +95,7 @@ public class Quiz_Results extends AppCompatActivity {
         quizResult.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
-                yourResult.setText(documentSnapshot.getString("type"));
+                yourResult.setText(" " + documentSnapshot.getString("type") + " ");
                 flavorText.setText(documentSnapshot.getString("message"));
             }
         });
