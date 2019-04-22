@@ -33,11 +33,17 @@ public class MainActivity extends AppCompatActivity {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+<<<<<<< HEAD
         breadType = findViewById(R.id.typeofbred);
         princess = findViewById(R.id.disneyprincess);
         yourewearing = findViewById(R.id.canweguess);
         mermaid = findViewById(R.id.whatkindofmermaid);
         temper = findViewById(R.id.temper);
+=======
+        breadType = findViewById(R.id.typeofbread);
+
+
+>>>>>>> c37b2f4efa3f7a49a620e484f18da7c6eb2055df
 //        String id = "bread";
 
         Button button = findViewById(R.id.button);
